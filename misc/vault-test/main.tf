@@ -7,3 +7,13 @@ provider "vault" {
 
 resource "null_resource" "null" {
 }
+
+resource "vault_generic_secret" "example_secret" {
+  path = "secret/example"
+
+  data_json = {
+    username = "your_username",
+    password = "your_password",
+  }
+}
+
