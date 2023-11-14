@@ -11,9 +11,9 @@ resource "null_resource" "null" {
 resource "vault_generic_secret" "example_secret" {
   path = "secret/example"
 
-  data_json = {
+  data_json = jsonencode({
     username = "your_username",
     password = "your_password",
-  }
+  })
 }
 
