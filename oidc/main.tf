@@ -79,12 +79,6 @@ variable "client_logo_url" {
 
 # Resources
 
-resource "random_string" "random" {
-  length  = 4
-  special = false
-  upper   = false
-}
-
 resource "azurerm_resource_group" "group" {
   name     = "env0${random_string.random.result}-${var.client_name}-group"
   location = "northeurope"
