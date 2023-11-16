@@ -5,8 +5,8 @@ deploy:
       after:
         - name: Download Vault
           run: |
-            curl -sL https://releases.hashicorp.com/vault/1.11.1/vault_1.11.1_linux_amd64.zip -o vault1.zip
-            unzip -o vault1.zip
+            curl -sL https://releases.hashicorp.com/vault/1.11.1/vault_1.11.1_linux_amd64.zip -o vault.zip
+            unzip -o vault.zip
     terraformInit:
       before:
         - name: Test Vault OIDC
