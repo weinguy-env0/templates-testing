@@ -6,5 +6,5 @@ output "message" {
 }
 
 output "message2" {
-  value = "Hello message2"
+  value = "Hello message"
 }
