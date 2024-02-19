@@ -1,0 +1,8 @@
+version: 2
+deploy:
+  steps:
+    terraformPlan:
+      after:
+        - name: "Skip Test: add approval"
+          run: |
+            echo "ENV0_REQUIRES_APPROVAL=true" >> $ENV0_ENV
