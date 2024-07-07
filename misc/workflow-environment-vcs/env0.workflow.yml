@@ -1,0 +1,14 @@
+environments:
+  rootService1:
+    name: rootService1
+    templateName: "null"
+  finalService:
+    name: finalService
+    vcs:
+      type: "terraform"
+      terraformVersion: "1.5.7"
+      repository: "https://github.com/weinguy-env0/templates-testing"
+      path: "misc/null-resource"
+      githubInstallationId: 40973999
+    needs:
+      - rootService1
