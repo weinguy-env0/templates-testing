@@ -4,4 +4,4 @@ deploy:
   steps:
     terraformInit:
       before:
-        - echo TF_VAR_email=user@domain.com >> $ENV0_ENV
+        - echo TF_VAR_email=user-new@domain.com >> $ENV0_ENV
