@@ -5,5 +5,5 @@ deploy:
     terraformInit:
       before:
         - gcloud version
-        - sudo gcloud components update --version=484.0.0 --quiet
+        - sudo gcloud components kaki pipi
         - gcloud version
