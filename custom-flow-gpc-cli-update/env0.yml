@@ -5,5 +5,5 @@ deploy:
     terraformInit:
       before:
         - gcloud version
-        - gcloud components update --version=484.0.0
+        - sudo gcloud components update --version=484.0.0
         - gcloud version
