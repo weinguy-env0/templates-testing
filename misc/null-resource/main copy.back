@@ -1,0 +1,22 @@
+terraform {
+  required_version = ">= 0.14.0"
+
+  backend "remote" {
+    hostname     = "backend-dev.api.dev.env0.com"
+    organization = "6f29bb6f-a97d-4bd8-87fa-ddccd6c875e3.264b4921-1cd3-4e3c-a68a-e8b4029ee7b8"
+    workspaces {
+      name = "my-first-remote-apply"
+    }
+  }
+}
+
+resource "null_resource" "null" {
+}
+
+output "message" {
+  value = "Hello world! 2"
+}
+
+output "message2" {
+  value = "Hello message2!"
+}
